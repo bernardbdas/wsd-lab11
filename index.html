@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="myapp">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="main.js"></script>
+    <link href="style1.css">
+
 </head>
 
-<body>
-
+<body ng-controller="myctrl">
+    <br /><br /><a href="http://localhost:5200/showJSON" target="_blank">to show in JSON format</a>
+    <br /><br /><a href="http://localhost:5200/showTable" target="_blank">to show in HTML Table format</a>
+    <br /><br /><a href="http://localhost:5200/add" target="_blank">to add a record</a>
+    <br /><br /><a href="http://localhost:5200/delete/2147237" target="_blank">to delete a record using ID</a>
+    <br /><br /><a href="http://localhost:5200/update/Dancing" target="_blank">to update the team event [from "Dancing" to "Singing"]</a>
+    <br /><br /><a href="http://localhost:5200/searchbyEv/:Dancing" target="_blank">to search by event type</a>
+    <br /><br /><a href="http://localhost:5200/searchbyTeam/:TeamD1" target="_blank">to search by team name</a>
 </body>
 
 </html>
